@@ -1,0 +1,154 @@
+:root {
+    --principal: #09e57e;
+    --preto: #141414;
+    --branco: #E2E2E2;
+    --ghost: #AAAAAA;
+    --gradiente-background: rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.85) 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--preto);
+    font-family: sans-serif;
+    color: var(--branco);
+}
+body p {
+    letter-spacing: 1px;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    font-family: 'Arial Black', Times;
+    font-size: 32pt;
+    text-transform: uppercase;
+    color: var(--principal);
+}
+
+header nav a {
+    margin-right: 12pt;
+    text-decoration: none;
+    color: var(--ghost);
+}
+
+header nav a:hover {
+    color: var(--branco);
+}
+
+.mini-logo {
+    font-size: 24pt;
+    color: var(--principal);
+}
+
+.filme-principal {
+    height: 80vh;
+    background: linear-gradient(var(--gradiente-background)), url(../images/dark-back.jpg);
+    background-size: cover;
+    font-size: 16pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .container {
+    margin: 0 28pt;
+}
+
+.filme-principal .tipo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14pt;
+    text-transform: uppercase;
+}
+
+.filme-principal .tipo h3 {
+    margin-top: 5pt;
+    margin-left: 12pt;
+}
+
+.filme-principal .titulo {
+    margin-bottom: 3%;
+    font-size: 24pt;
+    text-transform: uppercase;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 7%;
+}
+
+.botao {
+    margin-right: 9px;
+    padding: 7pt 23pt;
+    background-color: var(--branco);
+    border: 0;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+    color: var(--preto);
+
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.botao:hover {
+    background-color: var(--ghost);
+}
+
+.botao i {
+    margin-right: 5pt;
+    font-size: 14pt;
+}
+
+.botao-dark {
+    background-color: rgba(170, 170, 170, 0.5);
+    color: var(--branco);
+}
+
+.botao-dark:hover {
+    background-color: rgba(170, 170, 170, 0.2);
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes {
+    margin: 6pt 32pt;
+}
+
+.carrosel-filmes .titulo {
+    margin: 12pt 0pt 9pt 0pt;
+    text-transform: uppercase;
+}
+
+footer {
+    height: 60px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 12pt;
+    padding: 10pt 20pt;
+    background:rgba(0, 0, 0, 0.85);
+    font-size: 9pt;
+    font-style: italic;
+    text-align: right;
+    color:rgba(170, 170, 170, 0.5);
+}
+footer p {
+    margin-left: 20pt;
+}
